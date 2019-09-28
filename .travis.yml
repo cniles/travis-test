@@ -1,2 +1,9 @@
 script:
-  - echo value $TEST_VAR
+
+jobs:
+  include:
+    - language: python
+      script: echo value $TEST_VAR
+    - language: java
+      script: java -version
+
